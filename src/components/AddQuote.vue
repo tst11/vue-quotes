@@ -2,7 +2,7 @@
   <div class="row">
       <div class="col-md-6 col-md-offset-3">
           <p style="font-weight: bold">Quote</p>
-          <textarea v-model="quote" class="form-control" rows="5"></textarea>
+          <textarea id="textArea" v-model="quote" class="form-control" rows="5"></textarea>
           <button @click="addQuote" style="margin-top: 20px" class="btn btn-primary center-block">Add Quote</button>
       </div>
   </div>
@@ -28,7 +28,7 @@ export default {
       } else {
         alert("You have reached the maximum number of Quotes!");
       }
-      
+      document.getElementById("textArea").value = '';
     }
   }
 }
