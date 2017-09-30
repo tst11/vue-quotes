@@ -4,7 +4,7 @@
         <app-add-quote :progress="progress"></app-add-quote>
         <app-quotes :progress="progress"></app-quotes>
         <div style="margin-top: 60px;" class="row">
-            <p style="text-align: center" class="alert alert-info">Info: Click on a quote to delete it</p>
+            <p style="text-align: center" class="alert alert-info">Info: Click on a quote to delete it!</p>
         </div>
     </div>
 </template>
